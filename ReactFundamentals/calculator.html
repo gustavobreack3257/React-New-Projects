@@ -163,6 +163,9 @@
         }
 
         function Calculator() {
+            function handleOnClick(input) {
+                console.log('operation', input)
+            }
             return (
                 <Card className={`
           flex flex-col gap-[1.625rem] w-[22.25rem]
@@ -172,9 +175,9 @@
 
                     <div className="flex flex-col gap-3">
                         {buttons.map((row, index) => (
-                            <div key={index} className="flex gap-3">
+                            <div key={`row-${index}`} className="flex gap-3">
                                 {row.map(button => (
-                                    <Button key={button.input} className={button.className || "w-16 h-16"} variant={button.variant}>{button.input}</Button>
+                                    <Button key={button.input} className={button.className || "w-16 h-16"} variant={button.variant} onClick={() => handleOnClick(button.input)}>{button.input}</Button>
                                 ))}
                             </div>
                         ))}
