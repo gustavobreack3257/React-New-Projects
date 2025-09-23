@@ -14,6 +14,7 @@ export const buttonVariants = cva(
       },
       size: {
         md: "h-14 w-lg gap-1 py-4 px-5",
+        fl: "md: h-14 w-full gap-1 py-4 px-5",
       },
       disabled: {
         true: "opacity-50 pointer-events-none",
