@@ -9,6 +9,7 @@ import TrashIcon from "../../assets/icons/trash.svg?react";
 import PencilIcon from "../../assets/icons/pencil.svg?react";
 import XIcon from "../../assets/icons/x.svg?react";
 import CheckIcon from "../../assets/icons/check.svg?react";
+import { ShoppingCartIcon } from "@phosphor-icons/react";
 
 export default function TaskItem() {
   const [isEditing, setIsEditing] = React.useState(false);
@@ -26,6 +27,7 @@ export default function TaskItem() {
       {!isEditing ? (
         <>
           <InputCheckbox />
+          <ShoppingCartIcon />
           <Text className="flex-1">Fazer compra da semana</Text>
           <div className="flex gap-1">
             <ButtonIcon icon={TrashIcon} variant="tertiary" />
