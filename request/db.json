@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "gus",
+      "name": "Gustavo"
+    },
+    {
+      "id": "hele",
+      "name": "Helena"
+    },
+    {
+      "id": "tony",
+      "name": "antonio"
+    },
+    {
+      "id": "foo",
+      "name": "Foo Bar"
+    },
+    {
+      "id": "4mCCt8A"
+    },
+    {
+      "id": "jTh7Qbj"
+    },
+    {
+      "id": "gui",
+      "name": "Guilhermo"
+    },
+    {
+      "id": "gi",
+      "name": "Gisele"
+    }
+  ]
+}
